@@ -70,18 +70,18 @@ header{
 	align-items: center;
 }
 
-.portfolio-title{
+.title{
 	font-size: 32px;
 	color: #000000;
 }
 
-.pf-underline{
+.underline{
 	width: 70px;
 	height: 3px;
 	background-color: #EC715F;
 	margin-top: 8px;
 }
-.portfolio-text{
+.subtext{
 	margin: 30px auto;
 	font-size: 16px;
 	color: #000000;
@@ -123,4 +123,174 @@ header{
 }
 .pf-image:nth-child(6){
   background-image: url("img/webcamp-mother.png");
+}
+
+.feature{
+	width: 100%;
+	padding: 90px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.feature-texts{
+	width: 980px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feature-strengthes{
+	margin: 0 auto;
+	width: 980px;
+	display: flex;
+}
+
+.feature-strength{
+	width: 320px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.feature-strength:nth-child(2){
+	margin: 0 10px;
+}
+
+.strength-icon{
+	font-size: 60px;
+}
+
+.strength-title{
+	font-size: 20px;
+	color: #000000;
+	margin: 10px 0;
+}
+
+.strength-text{
+	font-size: 16px;
+	color: #000000;
+}
+
+.profile{
+	width: 100%;
+	padding: 90px 0;
+	background-color: #ECEFF1;
+	display: flex;
+	flex-direction: column;
+}
+
+.profile-texts{
+	width: 1024px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile-contents{
+	margin: 0 auto;
+	width: 1024px;
+	display: flex;
+}
+
+.profile-image-frame{
+	width: 512px;
+	height: auto;
+}
+
+.profile-image{
+	margin: 0 auto;
+	width: 250px;
+  height: 250px;
+  border-radius:50%;
+	background-image: url("img/my-icon.jpg");
+}
+
+.profile-contents-texts{
+	width: 512px;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.subtitle{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.contents-text{
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.contact{
+	width: 100%;
+	padding: 90px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-texts{
+	width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-contents{
+	margin: 0 auto;
+	width: 800px;
+	display: flex;
+}
+
+.contact-mail-tel{
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	padding-left: 100px;
+}
+
+.contact-heading{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.contact-detail{
+	margin-bottom: 20px;
+	text-decoration: underline;
+}
+
+.contact-sns{
+	width: 400px;
+	margin: 0 auto;
+	padding-left: 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+.icon-frame{
+	display: flex;
+}
+
+.contact-icon{
+	margin: 0 20px;
+	font-size: 50px;
+}
+
+footer{
+	width: 100%;
+	height: 60px;
+	background-color: #EC715F;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyrights{
+	font-size: 16px;
+	color: #FAFAFA;
 }
