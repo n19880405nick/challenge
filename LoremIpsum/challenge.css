@@ -5,7 +5,7 @@
 }
 
 header{
-	width: auto;
+	width: 100%;
 	height: 70px;
 	background-color: #EC715F;
 }
@@ -30,6 +30,41 @@ header{
 .header-list-item{
 	margin: 0 30px;
 	padding-top: 25px;
+}
+
+.menu-btn{
+	position: fixed;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  border: solid 2px #FAFAFA;
+  border-radius: 5px;
+  display: none;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color: #FAFAFA;
+  position: relative;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 6px;
 }
 
 .main-visual{
@@ -293,4 +328,88 @@ footer{
 .copyrights{
 	font-size: 16px;
 	color: #FAFAFA;
+}
+
+@media screen and (max-width: 768px){
+	header{
+		height: 50px;
+		position: fixed;
+	}
+
+	.nav{
+		width: 90%;
+	}
+
+	.logo{
+		height: 50px;
+	}
+
+	.header-list{
+		display: none;
+	}
+
+	.menu-btn{
+		display: inherit;
+	}
+
+	.main-visual{
+		width: 100%;
+		height: 650px;
+		color: #FAFAFA;
+		background-image: url("img/code.png");
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-visual-text{
+		margin-top: 200px;
+		font-size: 40px;
+	}
+
+	.main-visual-subtext{
+		margin-top: 10px;
+		font-size: 18px;
+	}
+
+	.subtext,
+	.portfolio-texts, .portfolio-images,
+	.feature-texts, .feature-strengthes,
+	.profile-texts, .profile-contents,
+	.contact-texts, .contact-contents{
+		width: 90%;
+	}
+
+	.pf-image:nth-child(1),
+	.pf-image:nth-child(3),
+	.pf-image:nth-child(5){
+		display: none;
+	}
+
+	.pf-image:nth-child(4){
+		margin-bottom: 10px;
+	}
+
+	.portfolio-images, .feature-strengthes,
+	.profile-contents, .contact-contents{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.strength-text{
+		margin-bottom: 30px;
+	}
+
+	.profile-contents-texts{
+		margin-top: 20px;
+		align-items: center;
+	}
+
+	.contact-mail-tel, .contact-sns{
+		align-items: center;
+		padding: 0;
+	}
 }
