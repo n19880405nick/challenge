@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.main-visual{
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.logo{
+  width: 150px;
+  height: 50px;
+}
+
+.main-image{
+  background-image: url("img/mainvisual.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+
+.index, .detail{
+  width: 800px;
+  margin: 50px auto;
+}
+
+.index{
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
+  margin: 50px auto 30px;
+  width: 800px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.list{
+  width: 600px;
+  margin-bottom: 50px;
+  list-style: none;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.list-item{
+  width: 600px;
+  margin: 20px auto;
+}
+
+.detail-images{
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.detail-image{
+  width: 390px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.detail-image:nth-child(1){
+  background-image: url("img/photo1.jpg");
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.detail-image:nth-child(2){
+  background-image: url("img/photo2.jpg");
+  margin-bottom: 20px;
+}
+
+.detail-image:nth-child(3){
+  background-image: url("img/photo3.jpg");
+  margin-right: 20px;
+}
+
+.detail-image:nth-child(4){
+  background-image: url("img/photo4.jpg");
+}
+
+.title:nth-child(2){
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+
+.detail-contents{
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+.detail-text{
+  width: 300px;
+  padding: 50px;
+}
+
+.partition{
+  margin-top: 50px;
+  width: 1px;
+  height: 170px;
+  background-color: black;
+}
+
+.detail-subtext{
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-right: 50px;
+}
+
+.subintroduction{
+  margin-bottom: 30px;
+}
+
+.link{
+  color: black;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyrights{
+	font-size: 10px;
+}
