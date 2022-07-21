@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Crimson Text', serif;
+}
+
+.main-visual, nav{
+  width: 90vw;
+}
+
+.main-visual{
+  margin: 80px auto 30px;
+  height: 90vh;
+  background-image: url("img/mainvisual.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  margin: 0 auto 50px;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li{
+  margin-right: 20px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+#concept, #work, footer{
+  width: 1000px;
+}
+
+#concept, #work{
+  margin: 50px auto;
+  height: 600px;
+  display: flex;
+
+}
+
+.concept-image, .work-image{
+  width: 500px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.concept-image{
+  background-image: url("img/concept.jpg");
+}
+
+.work-image{
+  background-image: url("img/work.jpg");
+}
+
+.concept-text, .work-text{
+  width: 500px;
+  height: 600px;
+  padding: 200px 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 24px;
+}
+
+.text{
+  margin-top: 20px;
+}
+
+footer{
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+.copyrights{
+  margin-left: auto;
+}
