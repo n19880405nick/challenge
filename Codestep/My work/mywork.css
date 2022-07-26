@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-header, #about, #works, #news, #contact, footer{
+header, #about, #works, #news, #contact{
   margin: 0 auto;
   width: 960px;
   padding: 4%;
@@ -52,6 +52,7 @@ a{
 }
 
 .title{
+  margin-bottom: 50px;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -101,4 +102,68 @@ a{
 .works-image:nth-child(6){
   margin-top: 20px;
   background-image: url("img/works6.jpg");
+}
+
+.article{
+  border-top: solid 1px gray;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+}
+
+.article:nth-child(6){
+  border-bottom: solid 1px gray;
+}
+
+.article-title{
+  margin-left: 100px;
+}
+
+.contact-name, .contact-email, .contact-message{
+  width: 700px;
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.contact-email{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus, .contact-message{
+  outline-width: 0;
+}
+
+.submit{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-submit{
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
+.contact-submit:hover{
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+}
+
+footer{
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyrights{
+  margin: 20px;
+  font-size: 12px;
 }
