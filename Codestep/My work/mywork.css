@@ -167,3 +167,66 @@ footer{
   margin: 20px;
   font-size: 12px;
 }
+
+@media screen and (max-width: 600px){
+  header, #about, #works, #news, #contact{
+    margin: 0 auto;
+    width: 100%;
+    padding: 4%;
+  }
+
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav{
+    margin-left: 0;
+  }
+
+  .main-visual{
+    background-image: url("img/mainvisual-sp.jpg");
+  }
+
+  .works-images{
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .works-image{
+    width: 90%;
+    height: 400px;
+    margin: 20px auto !important;
+  }
+
+  .article{
+    flex-direction: column;
+  }
+
+  .article-title{
+    margin-left: 0;
+  }
+
+  .contact-name, .contact-email, .contact-message{
+    width: 100%;
+    margin-left: 0;
+  }
+
+　table{
+		display: block;
+		width: 100%;
+	}
+	table tr{
+	  width: 100%;
+	  display: block;
+	}
+	table tbody{
+	  width: 100%;
+	  display: block;
+	}
+	table td{
+	  width: 100%;
+	  display: block;
+	}
+}
