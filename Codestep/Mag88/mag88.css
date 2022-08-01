@@ -188,3 +188,73 @@ footer{
   font-size: 10px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 896px){
+  .content1, .content2{
+    width: 100%;
+    padding: 0 5%;
+    margin: 50px auto;
+  }
+
+  .contents-images{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-image{
+    width: 90vw;
+    height: 90vh;
+    margin-top: 30px;
+  }
+
+  .content2{
+    margin-top: 50px;
+    padding-top: 30px;
+  }
+
+  .content3, .content4{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content4{
+    padding-top: 0;
+  }
+
+  .catalog-image, .antique-image{
+    width: 90vw;
+    height: 90vh;
+  }
+
+  .catalog-text .text, .antique-text .text{
+    margin-bottom: 0;
+    width: 90vw;
+  }
+
+  .antique-text{
+    margin-bottom: 50px;
+  }
+
+  .antique-text .text{
+    margin-bottom: 30px;
+  }
+
+  .pre-footer{
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .pre-footer a{
+    margin: 0 auto;
+  }
+
+  .pre-footer-list{
+    margin: 40px;
+  }
+
+  .pre-footer-text{
+    width: 90vw;
+    margin-left: 40px;
+  }
+
+}
