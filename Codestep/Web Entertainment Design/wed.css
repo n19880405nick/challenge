@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #f0f0f0;
+  color: #000;
+  font-size: 0.875rem;
+}
+
+header{
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.logo{
+  width: 100px;
+  height: 50px;
+  margin-left: 350px;
+  margin-right: 50px;
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style: none;
+  margin: 0 15px;
+}
+
+li a{
+  text-decoration: none;
+  color: #000;
+}
+
+.contact{
+  width: 200px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact:hover{
+  opacity: 0.7;
+}
+
+.main-visual{
+  width: 100%;
+  height: 95vh;
+  object-fit: cover;
+}
+
+#news, #business, #company{
+  margin: 50px auto;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title{
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+.title-ja{
+  margin-bottom: 40px;
+}
+
+.news-contents{
+  display: flex;
+}
+
+.news-content{
+  margin-left: 30px;
+  padding: 10px 80px 10px 0;
+  border-right: solid 1px #000;
+}
+
+.news-content:nth-child(1){
+  margin-left: 0;
+}
+
+.news-content:nth-child(3){
+  border-right: none;
+}
+
+.tag{
+  margin-left: 10px;
+  padding: 0 5px;
+  background-color: black;
+  color: white;
+}
+
+#about{
+  margin: 100px 0;
+  display: flex;
+}
+
+.about-image{
+  width: 1000px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-contents{
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  padding: 0 120px;
+}
+
+.business-contents-container{
+  display: flex;
+}
+
+.business-contents{
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitle{
+  font-weight: bold;
+}
+
+.business-image{
+  width: 400px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+.business-contents:nth-child(1){
+  padding-left: 80px;
+  margin-top: 100px;
+}
+
+.company-about{
+  width: 650px;
+  padding: 80px;
+  background-color: white;
+}
+
+dl{
+  padding: 50px 0;
+}
+
+dt{
+  float: left;
+  margin-top: 10px;
+}
+
+dd{
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+#company-image{
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+
+.company-image{
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}
+
+footer{
+  background-color: white;
+  width: 100vw;
+  height: 200px;
+}
+
+.footer-contents{
+  width: 1000px;
+  margin: 20px auto;
+  display: flex;
+}
+
+#logo .logo{
+  margin: 50px 0;
+}
+
+.copyright{
+  font-size: 10px;
+  margin-left: 450px;
+}
+
+.footer-company-about{
+  margin-top: 30px;
+  margin-left: auto;
+}
