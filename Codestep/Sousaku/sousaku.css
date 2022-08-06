@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Serif JP', serif;
+  background-color: #e6e2d7;
+}
+
+header{
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/mainvisual-pc.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  writing-mode: vertical-rl;
+}
+
+nav{
+  padding: 50px;
+}
+
+li{
+  list-style: none;
+  margin: 0 20px;
+}
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#store{
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+  width: 80px;
+  height: 250px;
+  background-color: black;
+}
+
+#store a{
+  padding: 25px 20px;
+  border: solid 1px white;
+  position: absolute;
+  bottom: 10px;
+  left: 8px;
+}
+
+#store a:hover{
+  opacity: 0.7;
+}
+
+#news, #item, #item2{
+  width: 1024px;
+  margin: 150px auto;
+  writing-mode: vertical-rl;
+}
+
+.subtitle{
+  margin-left: 5px;
+}
+
+.title{
+  font-size: 35px;
+}
+
+.news-contents{
+  margin: 70px;
+}
+
+.news-content{
+  padding: 10px 30px;
+  border-left: solid 1px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-content:nth-child(1){
+  border-right: solid 1px black;
+}
+
+time{
+  font-size: 10px;
+}
+
+#item .subtitle, #item2 .subtitle{
+  margin-top: 30px;
+}
+
+#item-image{
+  margin-top: 100px;
+  position: relative;
+}
+
+.item-image{
+  width: 700px;
+  height: 450px;
+  padding: 10px;
+}
+
+.item-text-frame{
+  width: 350px;
+  height: 150px;
+  opacity: 0.7;
+  position: absolute;
+  text-align: center;
+}
+
+#item .item-text-frame{
+  bottom: -10px;
+  left: -10px;
+  background-color: yellow;
+}
+
+.item-text{
+  writing-mode: horizontal-tb;
+  color: white;
+  margin-right: 110px;
+}
+
+#item2{
+  margin-left: 200px;
+}
+
+#item2 .item-text-frame{
+  bottom: -10px;
+  right: -10px;
+  background-color: rgb(149, 42, 38);
+}
