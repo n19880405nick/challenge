@@ -10,7 +10,7 @@ body{
 }
 
 header{
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   background-image: url("img/mainvisual-pc.jpg");
   background-size: cover;
@@ -135,4 +135,42 @@ time{
   bottom: -10px;
   right: -10px;
   background-color: rgb(149, 42, 38);
+}
+
+footer{
+  width: 99vw;
+  height: 500px;
+  background-color: black;
+  writing-mode: vertical-rl;
+  position: relative;
+}
+
+.address, .tel{
+  color: white;
+  font-size: 15px;
+}
+
+.tel{
+  margin-left: 50px;
+}
+
+#store-contact{
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.contact{
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: solid 1px white;
+}
+
+.copyright{
+  color: white;
+  writing-mode: horizontal-tb;
+  font-size: 10px;
+  position: absolute;
+  bottom: 30px;
+  left: 48%;
 }
