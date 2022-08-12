@@ -8,6 +8,12 @@ body{
   font-family: 'Noto Sans JP', 'Noto Sans', sans-serif;
 }
 
+header{
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
 #logo{
   width: 1200px;
   margin: 0 auto;
@@ -23,7 +29,7 @@ nav{
   background-color: #333;
 }
 
-ul, #pickup{
+ul, #pickup, #container{
   width: 1200px;
   display: flex;
   margin: 0 auto;
@@ -40,15 +46,20 @@ header li:nth-child(1){
 
 a{
   text-decoration: none;
+  color: black;
+}
+
+header a{
   color: white;
 }
 
+
 .pickup{
-  margin: 50px 0 100px;
+  margin: 150px 0 100px;
 }
 
 .pickup:nth-child(2){
-  margin: 50px 20px 100px;
+  margin: 150px 20px 100px;
 }
 
 .pickup-image{
@@ -62,11 +73,40 @@ a{
 }
 
 .readmore a{
-  color: black;
   font-size: 15px;
-  text-decoration: underline;
+  position: relative;
 }
 
-.readmore a:hover{
-  text-decoration: none;
+.readmore a::after{
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #333;
+  transition: all 200ms ease;
+}
+
+.readmore a:hover::after {
+  opacity: 0;
+  transform: translateY(3px);
+}
+
+.main{
+  width: 800px;
+  margin-bottom: 100px;
+}
+
+.main li{
+  margin-left: 0;
+}
+
+.main-visual{
+  width: 780px;
+  height: 400px;
+}
+
+.main-text{
+  padding: 10px 30px;
 }
