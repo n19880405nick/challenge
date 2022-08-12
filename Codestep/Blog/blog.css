@@ -234,3 +234,65 @@ footer{
   margin-bottom: 30px;
   font-size: 12px;
 }
+
+@media screen and (max-width: 767px){
+
+  #pickup,#container{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #logo, ul{
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  #pickup, #container, .footer-contents{
+    flex-direction: column;
+  }
+
+  .pickup-image, .main-visual, .ranking-image{
+    width: 95vw;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .pickup, .pickup:nth-child(2){
+    margin: 30px auto;
+  }
+
+  .pickup:first-child{
+    margin-top: 150px;
+  }
+
+  #container{
+    margin-top: 100px;
+  }
+
+  .main{
+    margin: 0 auto 50px;
+    width: 95%;
+  }
+
+  .main ul, .main .readmore, .archive-list-item,
+  .footer-contents, .menu li{
+    width: 100%;
+  }
+
+  .main-text{
+   width: 100%;
+   margin: 0;
+  }
+
+  aside{
+    margin:0 auto;
+    width: 95%;
+    padding-right: 0;
+  }
+
+  .about, .menu, .twitter{
+    width: 95%;
+    margin: 20px auto;
+  }
+
+}
