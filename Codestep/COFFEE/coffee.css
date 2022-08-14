@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Helvetica Neue", "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 0.9rem;
+}
+
+header{
+  background-image: url("img/mainvisual.jpg");
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 20px;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+}
+
+nav li{
+  margin: 0 15px;
+}
+
+nav li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(0 2px 2px black);
+  transition: all 0.3s 0s ease;
+}
+
+nav li a:hover{
+  color: red;
+}
+
+header h1{
+  padding-top: 37vh;
+  padding-left: 38vw;
+}
+
+.logo{
+  filter: drop-shadow(0 1px 1px black);
+}
+
+#menu{
+  width: 100vw;
+  margin: 20px 0;
+}
+
+.back-visual{
+  background-position: center;
+  background-attachment: fixed;
+  height: 300px;
+  position: relative;
+}
+
+#menu .back-visual{
+  background-image: url("img/about.jpg");
+}
+
+.title{
+  font-size: 70px;
+  color: white;
+  filter: drop-shadow(0 1px 1px black);
+  position: absolute;
+  top: 110px;
+  left: 44vw;
+}
+
+.menu-contents{
+  display: flex;
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.menu-content{
+  width: 500px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.menu-content:first-child{
+  border-right: solid 1px black;
+}
+
+.subtitle{
+  font-size: 40px;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: solid 5px red;
+}
+
+#menu dl{
+  margin: 90px 0 50px;
+  width: 450px;
+}
+
+#menu dt{
+  float: left;
+  width: 350px;
+  text-align: left;
+  margin-left: 50px;
+  border-bottom: dotted 1px black;
+}
+
+#menu dd{
+  margin: 30px 0;
+}
