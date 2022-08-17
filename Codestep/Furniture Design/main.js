@@ -1,0 +1,12 @@
+$(function(){
+  $('.hamburger').on('click',function(){
+    $('.hamburger').addClass('active');
+    $('.menu').addClass('active');
+    $('ul').addClass('active');
+    $('.menu').on('click',function(){
+      $('.hamburger').removeClass('active');
+      $('.menu').removeClass('active');
+      $('ul').removeClass('active');
+    });
+  });
+});

@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #333;
+  font-size: 0.875rem;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  height: 80px;
+  width: 99vw;
+  background-color: white;
+}
+
+.logo{
+  width: 180px;
+  margin: 30px 0 30px 300px;
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 100vh;
+  background-color: black;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu.active{
+  visibility: visible;
+  opacity: 0.8;
+  transform: translateX(0);
+}
+
+.menu ul{
+  list-style: none;
+  position: absolute;
+  top: 50px;
+  left: -300px;
+  transition: all 0.5s 0s ease;
+}
+
+.menu ul.active{
+  left: 50px;
+}
+
+.menu ul li{
+  margin: 10px 0;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s 0s ease;
+}
+
+header a:hover{
+  color: gray;
+}
+
+.hamburger{
+  width: 50px;
+  margin: 30px 0 30px 1100px;
+  background-color: transparent;
+  border-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger span{
+  width: 70%;
+  height: 2px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  transition: all 0.5s 0s ease;
+}
+
+.hamburger span:nth-child(2){
+  top: 1px;
+}
+
+.hamburger.active span:first-child{
+  transform: translateY(-6px) rotate(45deg);
+  background-color: white;
+}
+
+.hamburger.active span:nth-child(2){
+  transform: rotate(-45deg);
+  background-color:  white;
+}
+
+main{
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  margin: 0 auto 50px;
+}
+
+.main-contents{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 300px;
+  margin: 20px;
+}
+
+.item a, .viewmore, footer ul li a{
+  color: #333;
+  text-decoration: none;
+}
+
+.item-image{
+  width: 300px;
+  height: 330px;
+}
+
+.item-text{
+  margin: 10px 0 20px;
+}
+
+footer{
+  width: 1300px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+}
+
+footer ul{
+  display: flex;
+  list-style: none;
+}
+
+footer ul li:nth-child(2){
+  margin: 0 30px;
+}
+
+.copyright{
+  margin-left: auto;
+  font-size: 10px;
+}
+
