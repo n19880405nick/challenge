@@ -210,6 +210,12 @@ main p{
   color: #333;
 }
 
+@media screen and (max-width: 900px){
+  main p{
+    padding-top: 50px;
+  }
+}
+
 /*item*/
 
 .item-contents{
@@ -245,4 +251,26 @@ main p{
 .back-to-products{
   text-decoration: none;
   color: #333;
+}
+
+@media screen and (max-width: 900px){
+  .item-contents{
+    width: 90vw;
+    flex-direction: column;
+  }
+
+  .item-content-image{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 0;
+  }
+
+  .item-content-text{
+    width: 90vw;
+    margin-left: 0;
+  }
+
+  .item-content-text dl dd{
+    margin-left: 200px;
+  }
 }
