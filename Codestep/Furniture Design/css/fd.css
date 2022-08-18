@@ -123,8 +123,8 @@ main{
 }
 
 .item-image{
-  width: 300px;
-  height: 330px;
+  width: 15vw;
+  height: 35vh;
 }
 
 .item-text{
@@ -152,3 +152,38 @@ footer ul li:nth-child(2){
   font-size: 10px;
 }
 
+@media screen and (max-width: 900px){
+  .logo{
+    margin: 30px 0 10px 50px;
+  }
+
+  .hamburger{
+    margin: 30px 0;
+    margin-left: auto;
+  }
+
+  main{
+    max-width: 900px;
+    padding-top: 30px;
+  }
+
+  .item{
+    width: 45vw;
+  }
+
+  .item-image{
+    width: 45vw;
+    height: 50vh;
+  }
+
+  footer{
+    width: 90vw;
+    margin-left: 20px;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .copyright{
+    margin-left: 0;
+  }
+}
