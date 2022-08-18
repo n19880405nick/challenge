@@ -67,7 +67,7 @@ header a:hover{
 
 .hamburger{
   width: 50px;
-  margin: 30px 0 30px 1100px;
+  margin: 30px 0 30px 1050px;
   background-color: transparent;
   border-color: transparent;
   position: relative;
@@ -105,6 +105,7 @@ main{
   align-items: center;
   padding-top: 100px;
   margin: 0 auto 50px;
+  min-height: calc(90vh - 50px);
 }
 
 .main-contents{
@@ -186,4 +187,25 @@ footer ul li:nth-child(2){
   .copyright{
     margin-left: 0;
   }
+}
+
+/*products*/
+
+main p{
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.paginate{
+  list-style: none;
+  display: flex;
+}
+
+.paginate li{
+  margin: 0 20px;
+}
+
+.paginate li a{
+  text-decoration: none;
+  color: #333;
 }
