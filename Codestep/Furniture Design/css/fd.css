@@ -274,3 +274,51 @@ main p{
     margin-left: 200px;
   }
 }
+
+/*about*/
+
+.about-text{
+  width: 600px;
+}
+
+/*company*/
+
+.company-contents{
+  width: 600px;
+  margin-right: auto;
+  margin-left: 20px;
+  z-index: -10;
+}
+
+.about-company{
+  margin: 40px 0;
+}
+
+.about-company dt{
+  float: left;
+  padding: 20px 0 20px 10px;
+}
+
+.about-company dd{
+  padding: 20px 0 20px 200px;
+  border-bottom: solid 1px #e3e3e3;
+}
+
+.about-company dd:last-child{
+  border-bottom: none;
+}
+
+.company-contents iframe{
+  filter: grayscale(100%);
+}
+
+@media screen and (max-width: 900px){
+  .about-company dt{
+    float: none;
+    padding: 20px 0 0 20px;
+  }
+
+  .about-company dd{
+    padding: 10px 0 10px 20px;
+  }
+}
