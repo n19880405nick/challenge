@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: #333;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+header{
+  position: relative;
+}
+
+.logo-r, .logo-w{
+  width: 100px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+}
+
+.menu{
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  visibility: hidden;
+  opacity: 0;
+  transition: 800ms;
+}
+
+.open .menu{
+  visibility: visible;
+  opacity: 1;
+}
+
+.hamburger{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border-color: transparent;
+}
+
+.hamburger span{
+  display: block;
+  margin-left: 25px;
+  width: 50px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  transition: all 0.5s 0s ease;
+}
+
+.hamburger span:first-child{
+  top: 30px;
+}
+
+.hamburger span:nth-child(3){
+  top: 65px;
+}
+
+.open .hamburger span:first-child{
+  transform: translateY(17px) rotate(-45deg);
+}
+
+.open .hamburger span:nth-child(2){
+  display: none;
+}
+
+.open .hamburger span:nth-child(3){
+  transform: translateY(-17px) rotate(45deg);
+}
+
+.menu ul{
+  text-align: center;
+  padding-top: 80px;
+}
+
+.menu ul li{
+  margin: 20px 0;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.gotop span{
+  display: block;
+  width: 250px;
+  height: 50px;
+  padding-top: 10px;
+  margin: 50px auto;
+  border: solid 1px white;
+  transition: all 0.5s 0s ease;
+  position: relative;
+}
+
+.gotop span:hover{
+  background-color: white;
+  color: red;
+}
+
+.gotop span::after{
+  content: "";
+  width: 250px;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-right: solid 1px white;
+  border-bottom: solid 1px white;
+}

@@ -1,0 +1,12 @@
+$(function(){
+  $('.hamburger').on('click',function(){
+    if($('header').hasClass('open')){
+      $('header').removeClass('open')
+    }else{
+      $('header').addClass('open');
+    }
+  });
+  $('.menu').on('click',function(){
+    $('header').removeClass('open')
+  });
+});
