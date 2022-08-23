@@ -12,6 +12,7 @@ body{
 
 header{
   position: relative;
+  z-index: 10;
 }
 
 .logo-r, .logo-w{
@@ -24,7 +25,8 @@ header{
 .menu{
   width: 100vw;
   height: 100vh;
-  background-color: red;
+  position: fixed;
+  background-color: #ff2a2a;
   visibility: hidden;
   opacity: 0;
   transition: 800ms;
@@ -41,8 +43,14 @@ header{
   position: fixed;
   top: 0;
   right: 0;
-  background-color: red;
+  background-color: #ff2a2a;
   border-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.hamburger:hover{
+  opacity: 0.6;
 }
 
 .hamburger span{
@@ -115,4 +123,245 @@ header{
   left: 5px;
   border-right: solid 1px white;
   border-bottom: solid 1px white;
+}
+
+main{
+  padding-top: 100px;
+  position: relative;
+}
+
+.main-visual{
+  width: 100vw;
+  height: 80vh;
+}
+
+.main-visual-text{
+  position: absolute;
+  top: 400px;
+  left: 200px;
+  font-size: 45px;
+  z-index: 5;
+}
+
+.main-visual a{
+  position: absolute;
+  top: 570px;
+  left: 200px;
+  z-index: 5;
+}
+
+.main-visual-go{
+  width: 420px;
+  height: 80px;
+  background-color: #ff2a2a;
+  border: solid 1px #ff2a2a;
+  box-shadow: 0 10px 0 0 #9a0413;
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition:0.5s;
+}
+
+.main-visual-go:hover{
+  transform: scale(1.1);
+}
+
+.main-visual-images{
+  width: 75vw;
+  height: 80vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.main-visual-images::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 0 20px 15px #FFF;
+}
+
+.main-visual-image{
+  width: 75vw;
+  height: 80vh;
+  opacity: 0;
+  position: absolute;
+  animation: change-img 21s infinite;
+}
+
+.main-visual-image:first-child{
+  animation-delay: 0s;
+}
+
+.main-visual-image:nth-child(2){
+  animation-delay: 7s;
+}
+
+.main-visual-image:nth-child(3){
+  animation-delay: 14s;
+}
+
+@keyframes change-img{
+  0%{ opacity: 0;}
+	10%{ opacity: 1;}
+	90%{ opacity: 1;}
+	100%{ opacity: 0;}
+}
+
+/*reason*/
+
+#reason, #student{
+  margin-top: 100px;
+}
+
+.title{
+  font-size: 35px;
+  text-align: center;
+}
+
+.undertitle{
+  content: "";
+  display: block;
+  margin: 20px auto 80px;
+  width: 100px;
+  height: 3px;
+  background-color: black;
+}
+
+.reason-contents{
+  width: 100vw;
+  height: 80vh;
+  background-color: #ff2a2a;
+  position: relative;
+  overflow: hidden;
+}
+
+.reason1, .reason2{
+  width: 60vw;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  position: absolute;
+  transition: 1s;
+  opacity: 0;
+}
+
+.reason1{
+  top: 80px;
+  left: -700px;
+}
+
+.reason1.is-inview{
+  left: -10vw;
+  opacity: 1;
+}
+
+.reason2{
+  top: 400px;
+  left: 1500px;
+}
+
+.reason2.is-inview{
+  left: 50vw;
+  opacity: 1;
+}
+
+.reason-icon{
+  margin-top: 10px;
+  margin-right: 30px;
+  height: 60px;
+}
+
+.reason1 .reason-icon{
+  width: 90px;
+}
+
+.reason2 .reason-icon{
+  width: 50px;
+}
+
+.reason-subtitle{
+  font-size: 30px;
+  color: #ff2a2a;
+}
+
+#student{
+  height: 100vh;
+}
+
+.student-contents{
+  width: 860px;
+  margin: 0 auto;
+}
+
+.student-content1,
+.student-content2,
+.student-content3{
+  display: flex;
+  width: 650px;
+  opacity: 0;
+  transform: scale(0.1);
+  transition: 1s;
+}
+
+.student-content1.is-inview,
+.student-content2.is-inview,
+.student-content3.is-inview{
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+.student-content2{
+  margin: 80px 0 80px auto;
+}
+
+.student-icons{
+  text-align: center;
+}
+
+.student-icon{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.student-icons p{
+  font-size: 12px;
+}
+
+.student-text{
+  height: 150px;
+  margin: 0 30px;
+  padding: 20px;
+  background-color: #e9f1fb;
+  border-radius: 20px;
+  position: relative;
+}
+
+.student-content1 .student-text::before,
+.student-content3 .student-text::before{
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: -30px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e9f1fb;
+}
+
+.student-content2 .student-text::before{
+  content: "";
+  position: absolute;
+  top: 70%;
+  left: 100%;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-left: 15px solid #e9f1fb;
 }

@@ -7,6 +7,32 @@ $(function(){
     }
   });
   $('.menu').on('click',function(){
-    $('header').removeClass('open')
+    $('header').removeClass('open');
+  });
+  // inview
+  $('.reason1').on('inview',function(event, isInView, visiblePartX, visiblePartY){
+    if (isInView){
+      $(this).addClass('is-inview');
+    }
+  });
+  $('.reason2').on('inview',function(event, isInView, visiblePartX, visiblePartY){
+    if (isInView){
+      $(this).addClass('is-inview');
+    }
+  });
+  $('.student-content1').on('inview',function(event, isInView, visiblePartX, visiblePartY){
+    if (isInView){
+      $(this).addClass('is-inview');
+    }
+  });
+  $('.student-content2').on('inview',function(event, isInView, visiblePartX, visiblePartY){
+    if (isInView){
+      $(this).addClass('is-inview');
+    }
+  });
+  $('.student-content3').on('inview',function(event, isInView, visiblePartX, visiblePartY){
+    if (isInView){
+      $(this).addClass('is-inview');
+    }
   });
 });
