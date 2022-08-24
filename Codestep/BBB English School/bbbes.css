@@ -194,7 +194,7 @@ main{
   height: 80vh;
   opacity: 0;
   position: absolute;
-  animation: change-img 21s infinite;
+  animation: change-img 15s infinite;
 }
 
 .main-visual-image:first-child{
@@ -202,18 +202,19 @@ main{
 }
 
 .main-visual-image:nth-child(2){
-  animation-delay: 7s;
+  animation-delay: 5s;
 }
 
 .main-visual-image:nth-child(3){
-  animation-delay: 14s;
+  animation-delay: 10s;
 }
 
 @keyframes change-img{
-  0%{ opacity: 0;}
-	10%{ opacity: 1;}
-	90%{ opacity: 1;}
-	100%{ opacity: 0;}
+   0% {opacity: 0;}
+  15% {opacity: 1;}
+  30% {opacity: 1;}
+  45% {opacity: 0;}
+  100% {opacity: 0;}
 }
 
 /*reason*/
@@ -493,4 +494,140 @@ footer{
 
 .copyright{
   font-size: 10px;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 900px){
+  .logo-r, .logo-w{
+    top: 20px;
+    left: 30px;
+  }
+
+  .main-visual-images{
+    width: 100vw;
+    height: 40vh;
+    margin: 0 auto;
+  }
+  .main-visual-image{
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .main-visual-text{
+    top: 450px;
+    left: 20px;
+    font-size: 30px;
+  }
+
+  .main-visual a{
+    top: 570px;
+    left: 20px;
+  }
+
+  .main-visual-go{
+    width: 95vw;
+  }
+
+  #reason, #student{
+    margin-top: 20px;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+  .reason-contents{
+    height: 40vh;
+  }
+
+  .reason1, .reason2{
+    width: 100vw;
+    padding: 20px 0;
+  }
+
+  .reason1{
+    top: 40px;
+    left: -300px;
+  }
+
+  .reason1.is-inview{
+    left: -3vw;
+    opacity: 1;
+  }
+
+  .reason2{
+    top: 200px;
+    left: 500px;
+  }
+
+  .reason2.is-inview{
+    left: 3vw;
+    opacity: 1;
+  }
+
+  #student{
+    height: 150vh;
+  }
+
+  .student-contents,
+  .about-contents{
+    width: 100vw;
+  }
+
+  .student-content2{
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .student-content1,
+  .student-content3{
+    width: 100vw;
+    flex-direction: column-reverse;
+  }
+
+  .student-content2{
+    margin: 50px 0;
+  }
+
+  .student-text{
+    height: 100px;
+    margin: 10px auto;
+  }
+
+  .student-icon{
+    margin-top: 30px;
+  }
+
+  .student-content1 .student-text::before,
+  .student-content2 .student-text::before,
+  .student-content3 .student-text::before{
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+  }
+
+  #about{
+    height: 120vh;
+    padding: 20px;
+  }
+
+  .about-content{
+    width: 90vw;
+    padding: 30px;
+  }
+
+  .invite{
+    width: 90vw;
+  }
+
+  .footer-contents{
+    width: 100vw;
+    flex-wrap: wrap;
+  }
+
+  .footer-content{
+    width: 45vw;
+    margin: 30px 20px;
+  }
 }
