@@ -105,7 +105,7 @@ main{
   right: -300px;
 }
 
-.intro-contents, .feature-contents{
+.intro-contents{
   max-width: 900px;
   margin: 50px auto 0;
   display: flex;
@@ -169,6 +169,13 @@ main{
   background-color:rgba(0, 0, 0, 0.9);
 }
 
+.feature-contents,
+.step-contents, .contact-contents{
+  max-width: 900px;
+  margin: 50px auto 0;
+  display: flex;
+}
+
 .feature-content{
   width: 300px;
   height: 400px;
@@ -212,4 +219,149 @@ main{
 .feature-content p:nth-child(2){
   margin: 10px 0 5px;
   font-weight: bold;
+}
+
+/*step*/
+#step, #contact{
+  padding-top: 100px;
+  background-color: white;
+  text-align: center;
+}
+
+#step .title,
+#contact .title{
+  color: #121212;
+}
+
+#step .title::before,
+#step .title::after{
+  background-color: #121212;
+}
+
+#step p{
+  margin: 50px 450px 30px 0;
+}
+
+.flow, .step-texts{
+  display: flex;
+  flex-direction: column;
+}
+
+.flow{
+  width: 250px;
+  position: relative;
+}
+
+.flow::before{
+  content: "";
+  width: 50px;
+  height: 600px;
+  background-color: yellow;
+  position: absolute;
+  top: 0;
+  left: 75px;
+  z-index: 1;
+}
+
+.flow li{
+  list-style-position: inside;
+  width: 200px;
+  height: 80px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  background-color: #414141;
+  color: white;
+  margin-bottom: 50px;
+  z-index: 2;
+  line-height: 80px;
+  position: relative;
+}
+
+.flow li::before{
+  content: "";
+  position: absolute;
+  top: 80px;
+  left: 0;
+  border: 100px solid transparent;
+  border-top: 20px solid #414141;
+}
+
+.step-texts{
+  width: 600px;
+  text-align: left;
+}
+
+.step-texts dt{
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.step-texts span{
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #414141;
+  border-radius: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.step-texts dd{
+  padding: 10px 10px 30px 0;
+  margin-left: 50px;
+  border-top: solid 1px #414141;
+}
+/*contact*/
+#contact .title::before,
+#contact .title::after{
+  background-color: #121212;
+  width: 300px;
+}
+
+#contact .title::before{
+  left: -350px;
+}
+
+#contact .title::after{
+  right: -350px;
+}
+
+#contact p{
+  margin: 50px 550px 30px 0;
+}
+
+.contact-contents{
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.contact-content{
+  width: 260px;
+  height: 200px;
+  border: 1px solid #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 0.2s;
+}
+
+.contact-content::before{
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  border: 10px solid transparent;
+  border-bottom: 10px solid #121212;
+  border-right: 10px solid #121212;
+}
+
+.contact-content:hover{
+  outline: 3px solid #121212;
+}
+
+.contact-content:nth-child(2){
+  margin: 0 40px;
 }
