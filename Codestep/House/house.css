@@ -58,6 +58,27 @@ main{
   position: relative;
 }
 
+.totop{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #121212;
+  border: solid 1px white;
+  border-radius: 25px;
+  display: none;
+}
+
+.totop::before{
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  content: "";
+  border: solid 8px transparent;
+  border-bottom: solid 8px white;
+}
+
 #background{
   width: calc(100vw - 300px);
   height: 100vh;
@@ -364,4 +385,41 @@ main{
 
 .contact-content:nth-child(2){
   margin: 0 40px;
+}
+/*footer*/
+footer{
+  height: 200px;
+  width: calc(100vw - 300px);
+  margin-left: auto;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+}
+
+footer ul{
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li{
+  list-style: none;
+  padding: 0 20px;
+  border-right: solid 1px white;
+}
+
+footer ul li:last-child{
+  border-right: none;
+}
+
+footer ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.copyright{
+  font-size: 12px;
+  font-weight: bold;
 }
