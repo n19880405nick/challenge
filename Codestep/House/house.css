@@ -41,15 +41,74 @@ a{
 }
 /*レスポンシブにて表示部分*/
 .hamburger{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: transparent;
   border-color: transparent;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   visibility: hidden;
   opacity: 0;
+  z-index: 20;
+}
+
+.hamburger span{
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #121212;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  transition: 1s;
+}
+
+.hamburger span:first-child{
+  top: 30px;
+}
+
+.hamburger span:last-child{
+  top: 50px;
+}
+
+.mask{
+  display: none;
+  transition: 0.5s;
+}
+
+.open nav{
+  opacity: 1;
+  visibility: visible;
+  left: 0;
+}
+
+.open .mask{
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.open .hamburger span{
+  background-color: white;
+}
+
+.open .hamburger span:first-child{
+  transform: translateY(10px) rotate(315deg);
+}
+
+.open .hamburger span:nth-child(2){
+  display: none;
+}
+
+.open .hamburger span:nth-child(3){
+  transform: translateY(-10px) rotate(-315deg);
 }
 /*main*/
 main{
@@ -422,4 +481,97 @@ footer ul li a{
 .copyright{
   font-size: 12px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 960px){
+  header{
+    width: 100vw;
+    height: 80px;
+    background-color: white;
+    z-index: 5;
+  }
+
+  .logo{
+    width: 200px;
+    height: 80px;
+    margin: 0 0 0 20px;
+  }
+
+  nav{
+    width: 300px;
+    height: 100vh;
+    padding-top: 50px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    z-index: 20;
+    transition: 0.5s;
+  }
+
+  .hamburger{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  main{
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  #background{
+    width: 98vw;
+    height: 60vh;
+    margin: 0 auto;
+  }
+
+  .intro-content1, .intro-content2,
+  .intro-content3, .intro-content4{
+    width: 90vw;
+    height: 60vh;
+    margin: 40px auto;
+  }
+
+  #feature{
+    padding: 50px 0;
+  }
+
+  .step-contents, .contact-contents{
+    flex-direction: column;
+  }
+
+  .flow{
+    width: 90vw;
+  }
+
+  .flow::before{
+    left: 45vw;
+  }
+
+  .flow li{
+    width: 95vw;
+  }
+
+  .flow li::before{
+    border: 47.5vw solid transparent;
+    border-top: 30px solid #414141;
+  }
+
+  .step-texts{
+    width: 90vw;
+    margin: 50px 0;
+  }
+
+  .contact-content{
+    width: 60vw;
+    margin: 30px auto!important;
+  }
+
+  footer{
+    width: 100vw;
+    margin-left: 0;
+  }
+
 }
