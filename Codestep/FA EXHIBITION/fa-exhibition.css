@@ -5,7 +5,83 @@
 }
 
 body{
-  color: #050507;
+  background-color: #050507;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
+}
+/*header*/
+header{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.logo{
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+nav{
+  width: 100vw;
+  text-align: center;
+  position: fixed;
+  margin-top: 70px;
+  top: -300px;
+  transition: 0.5s;
+}
+
+.open nav{
+  top: 0;
+}
+
+nav ul li{
+  margin: 20px 0;
+}
+
+nav ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+.humberger{
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.humberger span{
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  transition: 0.5s;
+}
+.humberger span:first-child{
+  top: 30px;
+}
+
+.humberger span:last-child{
+  top: 50px;
+}
+
+.open .humberger span:first-child{
+  transform: translateY(9px) rotate(-45deg);
+}
+
+.open .humberger span:nth-child(2){
+  transform: rotate(45deg);
+}
+
+.open .humberger span:last-child{
+  transform: translateY(-9px) rotate(45deg);
 }
