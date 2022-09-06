@@ -15,6 +15,7 @@ header{
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 5;
   display: none;
 }
 
@@ -89,6 +90,10 @@ nav ul li a{
   transform: translateY(-9px) rotate(45deg);
 }
 /*main*/
+main{
+  position: relative;
+}
+
 .is-inview{
   transform: translateY(50px);
   transition: 1s;
@@ -144,6 +149,33 @@ nav ul li a{
   display: block;
   margin: 0 auto;
 }
+/*sidebar*/
+#sidebar{
+  height: 200px;
+  line-height: 20;
+  position: fixed;
+  top: 65vh;
+  right: -120px;
+  transform: rotate(-90deg);
+  transition: 0.5s;
+}
+
+#sidebar.is-inview-side{
+  right: -70px;
+}
+
+#sidebar a{
+  margin: 0 -2px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: white;
+  border: solid 1px white;
+  transition: 0.5s;
+}
+
+#sidebar a:hover{
+  color: #626262;
+}
 /*gallery*/
 #gallery{
   max-width: 800px;
@@ -162,4 +194,116 @@ nav ul li a{
 #gallery ul li img{
   width: 50%;
 }
+/*access*/
+#access{
+  margin: 300px 0;
+  text-align: center;
+}
 
+.bg{
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#access span{
+  width: fit-content;
+  display: block;
+  margin: 30px auto;
+}
+
+#access a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  margin: 30px auto;
+  line-height: 3;
+  background-color: transparent;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#access a:hover{
+  background-color: black;
+}
+/*contact*/
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 300px 0 100px;
+  text-align: center;
+}
+
+.contact-link{
+  margin: 20px 0;
+  width: 400px;
+  height: 100px;
+  border: 1px solid #626262;
+  line-height: 6;
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+  position: relative;
+}
+
+.contact-link:hover{
+  opacity: 0.7;
+}
+
+.contact-link span::after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 10px;
+  border-bottom: 1px solid white;
+  border-right: 2px solid white;
+  transform: skew(60deg);
+  position: absolute;
+  top: 40px;
+  right: -50px;
+  transition: 0.5s;
+}
+
+.contact-link:hover span::after{
+  right: -80px;
+}
+/*footer*/
+footer{
+  font-size: 12px;
+  margin: 50px 0;
+  padding: 100px 30px 0;
+  border-top: solid 1px white;
+}
+
+footer ul{
+  list-style: none;
+}
+
+.sns{
+  display: flex;
+  margin: 30px 0;
+}
+
+.sns li{
+  margin: 0 10px;
+}
+
+.sns li:first-child{
+  margin: 0;
+}
+
+.sns li a{
+  text-decoration: none;
+  color: white;
+}
+
+.privacy{
+  margin-left: auto!important;
+}
