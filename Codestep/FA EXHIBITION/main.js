@@ -27,7 +27,11 @@ $(function(){
 	});
   // 	メインビジュアルのサイズ変更
   $(window).on('scroll',function(){
-		$('#top img').css('width', 100/3 + $(window).scrollTop()/10 + '%');
+    if($(window).width() > 900){
+  		$('#top img').css('width', 100/3 + $(window).scrollTop()/10 + '%');
+    }else{
+      $('#top img').css('width', 100 - $(window).scrollTop()/10 + '%');
+    }
 	});
   // 	フェードイン
   $('.is-inview').on('inview',function(event, isInView, visiblePartX, visiblePartY){
@@ -50,10 +54,12 @@ $(function(){
   });
   // サイドバーの表示と非表示
   $('#gallery').on('inview',function(event, isInView, visiblePartX, visiblePartY){
-    if (isInView){
-      $('#sidebar').addClass('is-inview-side');
-    }else{
-      $('#sidebar').removeClass('is-inview-side');
+    if($(window).width() > 900){
+      if (isInView){
+        $('#sidebar').addClass('is-inview-side');
+      }else{
+        $('#sidebar').removeClass('is-inview-side');
+      }
     }
   });
 });

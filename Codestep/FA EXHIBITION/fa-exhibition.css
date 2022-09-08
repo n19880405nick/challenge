@@ -307,3 +307,47 @@ footer ul{
 .privacy{
   margin-left: auto!important;
 }
+/*responsive*/
+@media screen and (max-width: 900px){
+  #top img{
+    width: 100%;
+  }
+
+  .b-title{
+    font-size: 50px;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+  .subtitile{
+    font-size: 20px;
+  }
+
+  #information span{
+    font-size: 15px;
+  }
+
+  #gallery{
+    max-width: 100vw;
+    margin: 50px auto;
+  }
+
+  #gallery ul li{
+    text-align: center!important;
+    margin: 40px 0;
+  }
+
+  #gallery ul li img{
+    width: 90%;
+  }
+
+  .contact-link{
+    width: 80vw;
+  }
+
+  .contact-link span::after{
+    display: none;
+  }
+}
